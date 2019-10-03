@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.458" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-10-02T16:33:12" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="My First Test" timestamp="2019-10-02T16:33:12" tests="1" failures="0" time="0.041">
+    <testcase name="My First Test Does not do much!" time="0.041" classname="Does not do much!">
+    </testcase>
+  </testsuite>
+  <testsuite name="PestwebTV" timestamp="2019-10-02T16:33:12" tests="3" failures="0" time="2.4170000000000003">
+    <testcase name="PestwebTV should load pestweb tv" time="0.205" classname="should load pestweb tv">
+    </testcase>
+    <testcase name="PestwebTV should load the austin tv slides" time="1.564" classname="should load the austin tv slides">
+    </testcase>
+    <testcase name="PestwebTV should be lean enough to run on a google tv" time="0.648" classname="should be lean enough to run on a google tv">
+    </testcase>
+  </testsuite>
+</testsuites>
