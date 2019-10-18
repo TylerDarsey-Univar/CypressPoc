@@ -7,7 +7,7 @@ describe('My First Test', () => {
 describe('PestwebTV', () => {
 
     it('should load pestweb tv', ()=>{
-        cy.visit('https://www.pestweb.com/tv');
+        cy.visit('https://www.pestweb.loc/tv');
 
         cy.get('h1').should('contain', 'ProCenter TV Slides');
     });
@@ -21,7 +21,7 @@ describe('PestwebTV', () => {
         let dateString = `${year}-${month}-${day}`;
 
         cy.server();
-        cy.visit(`https://www.pestweb.com/tv/HQ`)
+        cy.visit(`https://www.pestweb.loc/tv/HQ`)
             .location('pathname', { timeout: 10000 })
             .should('eq', `/tv/HQ/${dateString}`);        
 
@@ -33,7 +33,7 @@ describe('PestwebTV', () => {
 
     it('should be lean enough to run on a google tv', ()=>{
       cy.server();
-      cy.visit(`https://www.pestweb.com/tv/HQ`)
+      cy.visit(`https://www.pestweb.loc/tv/HQ`)
           .location('pathname', { timeout: 10000 });    
 
       expect(window.performance.memory.usedJSHeapSize).to.be.below(50000000);
